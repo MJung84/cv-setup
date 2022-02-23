@@ -1,0 +1,39 @@
+/***********************************
+/* General Settings */
+
+*,
+*:before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+}
+
+header {
+  padding: 48px 16px;
+  text-align: center;
+  background-color: darkgrey;
+}
+
+* {
+  max-width: 960px;
+}
+
+main {
+  margin: 0 auto;
+}
