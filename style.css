@@ -7,8 +7,30 @@
   box-sizing: border-box;
 }
 
+* {
+  max-width: 960px;
+}
+
 body {
-  margin: 0;
+  margin: 20px;
+}
+
+/*********************************
+/* specific settings */
+
+.nav-link {
+  padding: 4px 8px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: blue;
+  background-color: lightgray;
+}
+
+.nav-link:active {
+  color: chocolate;
+  background-color: burlywood;
 }
 
 * {
@@ -30,10 +52,14 @@ header {
   background-color: darkgrey;
 }
 
-* {
-  max-width: 960px;
+.main > * + * {
+  margin-top: 48px;
 }
 
-main {
-  margin: 0 auto;
+main > * {
+  border-top: 3px solid darkgrey;
+}
+
+main > *:first-child {
+  border-top: none;
 }
