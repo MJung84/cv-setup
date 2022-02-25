@@ -7,12 +7,21 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Lato", sans-serif;
+}
+
 * {
   max-width: 960px;
 }
 
 body {
   margin: 20px;
+}
+
+*::selection {
+  color: beige;
+  background-color: rgb(39, 30, 30);
 }
 
 /*********************************
@@ -26,6 +35,13 @@ body {
 .nav-link:hover {
   color: blue;
   background-color: lightgray;
+}
+
+/*********************************
+/* at https://www.emojicopy.com/ */
+
+.profession::after {
+  content: "👨‍💻";
 }
 
 .nav-link:active {
