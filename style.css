@@ -87,3 +87,17 @@ main > *:first-child {
 .experience-subheading {
   display: inline-block;
 }
+
+.article-heading {
+  position: relative;
+  left: -16px;
+}
+
+.hire-me {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: chocolate;
+}
