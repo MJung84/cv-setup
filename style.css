@@ -9,6 +9,7 @@
 
 html {
   font-family: "Lato", sans-serif;
+  font-size: 16px;
 }
 
 * {
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 *::selection {
@@ -28,13 +29,25 @@ body {
 /* specific settings */
 
 .nav-link {
-  padding: 4px 8px;
+  padding: 0.25rem 0.5rem;
   color: black;
 }
 
 .nav-link:hover {
   color: blue;
   background-color: lightgray;
+}
+
+.heading-group {
+  font-size: 4rem;
+}
+
+.main-heading {
+  font-size: 1em;
+}
+
+.profession {
+  font-size: 0.25em;
 }
 
 /*********************************
@@ -63,17 +76,23 @@ h6 {
 }
 
 header {
-  padding: 48px 16px;
+  padding: 3rem 1rem;
   text-align: center;
   background-color: darkgrey;
 }
 
 .main > * + * {
-  margin-top: 48px;
+  margin-top: 3rem;
+}
+
+.main {
+  max-width: 60ch;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
 main > * {
-  border-top: 3px solid darkgrey;
+  border-top: 0.25rem solid darkgrey;
 }
 
 main > *:first-child {
@@ -90,14 +109,14 @@ main > *:first-child {
 
 .article-heading {
   position: relative;
-  left: -16px;
+  left: -1rem;
 }
 
 .hire-me {
   position: absolute;
-  right: 25px;
-  top: 25px;
-  padding: 8px;
-  border-radius: 4px;
+  left: 53rem;
+  top: 2rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
   background-color: chocolate;
 }
