@@ -16,6 +16,28 @@ html {
   font-size: 16px;
 }
 
+body {
+  --background-color: snow;
+  --text-color: black;
+  --accent-color: grey;
+  --accent-gradient-color: lightgrey;
+  --nav-link-hover-color: blue;
+  --selection-color: beige;
+  --accent2-color: chocolate;
+  --background-accent-color: burlywood;
+  --border-color: darkgrey;
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    --background-color: black;
+    --text-color: white;
+  }
+}
+
 @media screen and (min-width: 768px) {
   html {
     font-size: 18px;
@@ -33,7 +55,7 @@ body {
 }
 
 *::selection {
-  color: beige;
+  color: var(--selection-color);
   background-color: rgb(39, 30, 30);
 }
 
@@ -42,12 +64,12 @@ body {
 
 .nav-link {
   padding: 0.25rem 0.5rem;
-  color: black;
+  color: var(--text-color);
 }
 
 .nav-link:hover {
-  color: blue;
-  background-color: lightgray;
+  color: var(--nav-link-hover-color);
+  background-color: var(--accent-gradient-color);
 }
 
 .heading-group {
@@ -71,8 +93,8 @@ body {
 }
 
 .nav-link:active {
-  color: chocolate;
-  background-color: burlywood;
+  color: var(--accent2-color);
+  background-color: var(--background-accent-color);
 }
 
 * {
@@ -91,8 +113,11 @@ h6 {
 header {
   padding: 3rem 1rem;
   text-align: center;
-  _background-color: darkgrey;
-  background-image: linear-gradient(45deg, grey, lightgray);
+  background-image: linear-gradient(
+    45deg,
+    var(--accent-color),
+    var(--accent-gradient-color)
+  );
   background-repeat: no-repeat;
   border-radius: 2rem;
 }
@@ -108,7 +133,7 @@ header {
 }
 
 main > * {
-  border-top: 0.25rem solid darkgrey;
+  border-top: 0.25rem solid var(--border-color);
 }
 
 main > *:first-child {
@@ -134,7 +159,7 @@ main > *:first-child {
   top: 2rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  background-color: chocolate;
+  background-color: var(--accent2-color);
 }
 
 @media screen and (min-width: 992px) {
@@ -186,7 +211,11 @@ main > *:first-child {
 }
 
 .footer {
-  background-image: linear-gradient(135deg, grey, lightgray);
+  background-image: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--accent-gradient-color)
+  );
   text-align: center;
   padding: 3rem;
   border-radius: 2rem;
