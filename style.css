@@ -91,7 +91,10 @@ h6 {
 header {
   padding: 3rem 1rem;
   text-align: center;
-  background-color: darkgrey;
+  _background-color: darkgrey;
+  background-image: linear-gradient(45deg, grey, lightgray);
+  background-repeat: no-repeat;
+  border-radius: 2rem;
 }
 
 .main > * + * {
@@ -127,7 +130,7 @@ main > *:first-child {
 
 .hire-me {
   position: absolute;
-  right: 3rem;
+  right: 5rem;
   top: 2rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
@@ -180,4 +183,11 @@ main > *:first-child {
     align-items: baseline;
     justify-content: space-between;
   }
+}
+
+.footer {
+  background-image: linear-gradient(135deg, grey, lightgray);
+  text-align: center;
+  padding: 3rem;
+  border-radius: 2rem;
 }
