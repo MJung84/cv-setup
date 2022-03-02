@@ -164,9 +164,18 @@ main > *:first-child {
   position: absolute;
   right: 5rem;
   top: 2rem;
+  opacity: 0.5;
   padding: 0.5rem;
   border-radius: 0.25rem;
   background-color: var(--accent2-color);
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+header:hover .hire-me,
+.header:focus-within .hire-me {
+  opacity: 1;
+  transform: scale(1.5);
 }
 
 @media screen and (min-width: 992px) {
